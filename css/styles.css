@@ -1,0 +1,166 @@
+:root {
+  --secondary: #d8edf2;
+  --main: #989898;
+  --text: #4f4f4f;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
+
+body {
+  scroll-behavior: smo;
+  font-family: "Archivo", sans-serif;
+  overflow-x: hidden;
+}
+
+.title {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: var(--main);
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  /* width: 0; */
+  background-color: var(--main);
+  top: 45px;
+  right: 0px;
+  /* -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; */
+  transition: 0.4s ease-in-out all;
+}
+
+.title-left::after {
+  top: 80px;
+  left: 0;
+}
+
+.title-right::after {
+  top: 70px;
+  right: 0px;
+}
+
+section {
+  position: relative;
+}
+
+#empresa::after {
+  content: "";
+  position: absolute;
+  height: 130%;
+  width: 66%;
+  top: 45px;
+  transform: translateX(-50%);
+  /* width: 0; */
+  background: url("../images/section1.png") no-repeat center;
+  background-size: cover;
+  opacity: 50%;
+  z-index: 0;
+}
+
+#acompañamiento::after {
+  content: "";
+  position: absolute;
+  height: 130%;
+  width: 66%;
+  top: 65px;
+  transform: translateX(-50%);
+  /* width: 0; */
+  background: url("../images/section2.png") no-repeat right;
+  background-size: contain;
+  opacity: 50%;
+  z-index:0
+}
+
+#proyectos .section-title::after {
+  content: "";
+  position: absolute;
+  height: 130%;
+  width: 206%;
+  top: 60px;
+  right: 0;
+  /* transform: translateX(-50%); */
+  /* width: 0; */
+  background: url("../images/section3.jpg") no-repeat left;
+  background-size: contain;
+  opacity: 50%;
+  z-index:0
+
+}
+
+header{
+    z-index: 1;
+}
+
+section span::after {
+  top: 80px;
+  left: 0;
+}
+
+.title-right::after {
+  top: 70px;
+  right: 0px;
+}
+
+p {
+  font-weight: 400;
+  color: var(--text);
+}
+
+.links {
+  cursor: pointer;
+  color: var(--main);
+  position: relative;
+  transition: margin-top 200ms;
+}
+
+.links:hover {
+  margin-top: 13px;
+}
+
+.links:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #dbdbdb;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.links:hover:after {
+  width: 100%;
+}
+
+.logo {
+  background: url("/images/EnkiDesignLogos/logo_light.png") no-repeat;
+  background-size: contain;
+  transition: all 200ms;
+}
+
+.logoRoss {
+    background: url("/images/ross.png") no-repeat;
+    background-size: contain;
+    transition: all 200ms;
+    position: relative;
+  }
+
+.logoRoss::before{
+    content: "2020";
+    color: var(--main);
+    top: 20px;
+    position: relative;
+    margin: auto;
+    left: -59px;
+}
+
+.logo:hover {
+  background: url("/images/EnkiDesignLogos/logo_orange.png") no-repeat;
+  background-size: contain;
+}
