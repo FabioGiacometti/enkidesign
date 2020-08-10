@@ -6,15 +6,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
-
-h3{
-  word-break: break-all;
-}
-
 body {
+  scroll-behavior: smooth;
   font-family: "Archivo", sans-serif;
   overflow-x: hidden;
 }
@@ -25,13 +18,26 @@ body {
   color: var(--main);
 }
 
+.title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  /* width: 0; */
+  background-color: var(--main);
+  top: 45px;
+  right: 0px;
+  /* -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; */
+  transition: 0.4s ease-in-out all;
+}
+
 .title-left::after {
-  bottom: -10px;
+  top: 80px;
   left: 0;
 }
 
 .title-right::after {
-  bottom: -10px;
+  top: 70px;
   right: 0px;
 }
 
@@ -53,16 +59,38 @@ section {
   z-index: 0;
 }
 
-#acompañamiento{
-  word-break: normal;
+#acompañamiento::after {
+  content: "";
+  position: absolute;
+  height: 130%;
+  width: 66%;
+  top: 65px;
+  transform: translateX(-50%);
+  /* width: 0; */
+  background: url("../images/section2.png") no-repeat right;
+  background-size: contain;
+  opacity: 50%;
+  z-index:0
 }
 
+#proyectos .section-title::after {
+  content: "";
+  position: absolute;
+  height: 130%;
+  width: 206%;
+  top: 60px;
+  right: 0;
+  /* transform: translateX(-50%); */
+  /* width: 0; */
+  background: url("../images/section3.jpg") no-repeat left;
+  background-size: contain;
+  opacity: 50%;
+  z-index:0
 
+}
 
-
-
-header {
-  z-index: 1;
+header{
+    z-index: 1;
 }
 
 section span::after {
@@ -117,19 +145,19 @@ p {
 }
 
 .logoRoss {
-  background: url("/images/ross.png") no-repeat;
-  background-size: contain;
-  transition: all 200ms;
-  position: relative;
-}
+    background: url("/images/ross.png") no-repeat;
+    background-size: contain;
+    transition: all 200ms;
+    position: relative;
+  }
 
-.logoRoss::before {
-  content: "2020";
-  color: var(--main);
-  top: 20px;
-  position: relative;
-  margin: auto;
-  left: -59px;
+.logoRoss::before{
+    content: "2020";
+    color: var(--main);
+    top: 20px;
+    position: relative;
+    margin: auto;
+    left: -59px;
 }
 
 .logo:hover {
@@ -137,22 +165,3 @@ p {
   background-size: contain;
 }
 
-@media (max-width: 1000px) {
-
-  #empresa::after,
-  #acompañamiento::after,
-  #proyectos .section-title::after
-   {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .title::after,
-  section span::after,
-  .title-right::after,
-  .links:hover,
-  .links:after {
-    display: none;
-  }
-}

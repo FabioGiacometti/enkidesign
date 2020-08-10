@@ -11,39 +11,34 @@
     <!-- fin del favicon -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="css/burger.css" /> -->
-    <link rel="stylesheet" href="build/styles.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="build/styles.css" />
     <title>EnkiDesign</title>
 </head>
 
-<body style="scroll-behavior: smooth!important;">
-    <header class="fixed w-full fixed bg-white md:bg-opacity-50 top-0">
+<body>
+    <header class="fixed w-full fixed bg-white bg-opacity-50">
         <div class="flex justify-between items-center">
             <span class="logo w-32 h-16 ml-8"></span>
-
-            <div class="burger burger-arrow open">
-                <div class="burger-lines"></div>
-            </div>
-            <ul class="hidden md:flex">
-                <li class="links mr-4 my-4"><a href="#empresa">Empresa</a></li>
-                <li class="links mr-4 my-4"><a href="#proyectos">Proyectos</a></li>
+            <ul class="flex">
+                <li class="links mr-4 my-4"><a href="#empresa"></a>Empresa</li>
+                <li class="links mr-4 my-4"><a href="#proyectos"></a>Proyectos</li>
                 <li class="links mr-8 my-4">
-                    <a href="#acompañamiento">Acompañamiento</a>
+                    <a href="#acompañamiento"></a>Acompañamiento
                 </li>
             </ul>
         </div>
     </header>
 
-    <img src="images/hero.png" alt="" class=" hidden md:flex mx-auto" />
-    <main class="w-full p-6 md:p-0 md:w-3/5 mx-auto">
-        <section class="flex flex-col md:flex-row mt-24" id="empresa">
-            <span class="section-title md:w-1/3 md:mr-8">
-                <h2 class="mb-4 md:mb-0 title leading-none text-2xl md:text-3xl relative md:text-right">
+    <img src="images/hero.png" alt="" class="mx-auto" />
+    <main class="w-full md:w-3/5 mx-auto">
+        <section class="flex mt-24" id="empresa">
+            <span class="section-title w-1/3 mr-8">
+                <h2 class="title leading-none text-3xl relative text-right">
                     El estudio
                 </h2>
             </span>
-            <article class="md:w-2/3">
+            <article class="w-2/3">
                 <p>
                     Nos dedicamos al acompañamiento en Proyectos de diferentes escalas.
                     Colaborando con diversos Estudios y Empresas en el desarrollo
@@ -55,14 +50,14 @@
                 </p>
             </article>
         </section>
-        <section class="flex flex-col md:flex-row-reverse mt-8 md:mt-24" id="proyectos">
-            <span class="section-title md:w-1/3 md:ml-8 relative">
-                <h2 class="mb-4 md:mb-0 title title-left leading-none text-2xl md:text-3xl relative ">
+        <section class="flex flex-row-reverse mt-24" id="proyectos">
+            <span class="section-title w-1/3 ml-8 relative">
+                <h2 class="title title-left leading-none text-3xl relative relative">
                     La vida <br />
                     del proyecto
                 </h2>
             </span>
-            <article class="md:w-2/3 md:text-justify">
+            <article class="w-2/3 text-justify">
                 <p>
                     El acompañamiento del desarrollo de los proyectos, comienza con el
                     ANTEPROYECTO, así lo entendemos y trabajamos, adaptándonos a las
@@ -75,13 +70,14 @@
                 </p>
             </article>
         </section>
-        <section class="flex flex-col md:flex-row mt-8 md:mt-24" id="acompañamiento">
-            <span class="section-title md:w-1/3 md:mr-8">
-                <h2 class="mb-4 md:mb-0 title title-right leading-none text-2xl md:text-3xl relative md:text-right ">
-                    Seguimiento
+        <section class="flex mt-24" id="acompañamiento">
+            <span class="section-title w-1/3 mr-8">
+                <h2 class="title title-right leading-none text-3xl relative text-right">
+                    Nuestro <br />
+                    acompañamiento
                 </h2>
             </span>
-            <article class="md:w-2/3">
+            <article class="w-2/3">
                 <p>
                     Colaboración en resolución de proyecto ejecutivo, aplicando
                     metodología BIM (Autodesk Revit). Desarrollo de legajo técnico
@@ -93,34 +89,19 @@
                 </p>
             </article>
         </section>
-        <div class="cognito">
-            <script src="https://www.cognitoforms.com/s/7axNlrvRDE2MAhk444OM1g"></script>
-            <script>Cognito.load("forms", { id: "2" });</script>
-        </div>
     </main>
     <footer class="h-64 bg-gray-800 flex items-center relative mt-32">
         <div class="flex justify-between items-center w-full">
             <span class="logo w-32 h-16 ml-8"></span>
             <ul class="flex-col">
-                <li class="links mr-4 my-4"><a href="#empresa">Empresa</a></li>
-                <li class="links mr-4 my-4"><a href="#proyectos">Proyectos</a></li>
+                <li class="links mr-4 my-4"><a href="#empresa"></a>Empresa</li>
+                <li class="links mr-4 my-4"><a href="#proyectos"></a>Proyectos</li>
                 <li class="links mr-8 my-4">
-                    <a href="#acompañamiento">Acompañamiento</a>
+                    <a href="#acompañamiento"></a>Acompañamiento
                 </li>
             </ul>
 
-            <a href="http://www.ross.com.ar/index-es" target="blank" class="logoRoss w-32 h-16 ml-8"></a>
-            <script>
-
-
-                setTimeout(myFunction = () => {
-                        var x = document.querySelector('.u-i4CEa3Sk2Ks_VFk7rwNw')
-                        console.log("este es next sibling",x)
-                      
-                            x.style.display = "none";
-                        
-                    }, 1000)
-            </script>
+            <a href="http://www.ross.com.ar/es" target="blank"  class="logoRoss w-32 h-16 ml-8"></a>
         </div>
     </footer>
 </body>
