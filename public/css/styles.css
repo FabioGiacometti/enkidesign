@@ -39,27 +39,34 @@ section {
   position: relative;
 }
 
-#empresa::after {
-  content: "";
+.hero h1{
+  line-height: 81px;
+  filter: drop-shadow(0px 0px 4px #ccdde0 ) drop-shadow(0px 4px 2px #474a4e );
+}
+  /*#empresa::after {
+ content: "";
   position: absolute;
   height: 130%;
   width: 66%;
   top: 45px;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   /* width: 0; */
-  background: url("../images/section1.png") no-repeat center;
+  /* background: url("../images/section1.png") no-repeat center;
   background-size: cover;
   opacity: 50%;
-  z-index: 0;
+  z-index: 0; 
+}*/
+
+.hero{
+  background-image: url("../images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #acompañamiento{
   word-break: normal;
 }
-
-
-
-
 
 header {
   z-index: 1;

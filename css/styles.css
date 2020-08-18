@@ -38,7 +38,7 @@ body {
 section {
   position: relative;
 }
-
+/* 
 #empresa::after {
   content: "";
   position: absolute;
@@ -47,11 +47,11 @@ section {
   top: 45px;
   transform: translateX(-50%);
   /* width: 0; */
-  background: url("../images/section1.png") no-repeat center;
+  /* background: url("../images/section1.png") no-repeat center;
   background-size: cover;
   opacity: 50%;
-  z-index: 0;
-}
+  z-index: 0; 
+} */
 
 #acompañamiento{
   word-break: normal;
